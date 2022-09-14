@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Movie</title>
 </head>
-<body>        
+<body style="background-color: #0f0b03;">        
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img class="logo" src="./images/logo.png"></a>
@@ -19,7 +19,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./02_home.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./03_community.html">Community</a>
@@ -70,12 +70,78 @@
         </div>
     </nav>
 
-    <footer>
-        <div class="text-center bg-light">
-            <p class="my-0">Web-Bootstrap PJT, by 김예린, 장영진</p>
-        </div>
-    </footer>
+    <!-- <header>
+      <a href="#"><img class="movie_logo" src="/images/movie_logo.png"></a>
+    </header> -->
 
+    <div>
+      <div class="movie-photo">
+        <div class="movie_info_text text-white m-5">
+          <h1 class="mx-5" style="font-size: 3.5rem;">The Shawshank Redemption </h1>
+          <div class="movie-column text-muted d-flex mx-5 mb-5">
+            <span style="font-size: 1.2rem">142분</span>
+            <span style="font-size: 1.2rem">1995</span>
+            <span style="font-size: 1.2rem">15+</span>
+          </div>
+          <h3 class="text-start text-white mx-5">Fear can hold you prisoner, hope can set you free</h2>
+          <h4 class="text-start text-white fw-light mx-5 mb-5" >두려움은 당신을 감옥에 가두지만 희망은 당신을 자유롭게 만든다.</h3>
+          <div class="movie_table text-muted mx-5 mb-5">
+            <dl>
+              <dt>감독</dt>
+              <dd>Frank Darabont</dd>
+            </dl>
+            <dl>
+              <dt>주연</dt>
+              <dd>Tim Robbins, Morgan Freeman, Bob Gunton</dd>
+            </dl>
+            <dl>
+              <dt>장르</dt>
+              <dd>드라마</dd>
+            </dl>
+            <dl>
+              <dt>자막</dt>
+              <dt>한국어</dt>
+            </dl>
+          </div>
+          <p class="mx-5">
+            <a class="btn text-white" data-bs-toggle="collapse" href="#trailer" role="button" aria-expanded="false" aria-controls="collapseExample">
+              <img src="images/play_icon.png" style="width:32px;"><span style="margin-left: 10px">Now watching</span>
+            </a>
+          </p>
+          <div class="collapse" id="trailer">
+            <div class="card card-body" style="background-color: #0f0b03">
+              <iframe class="mx-5" width="560" height="315" src="https://www.youtube.com/embed/njJ41irPjTc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+      </div>
+        <div class="movie_photo1">
+          <div class="movie_photo2">
+            <div class="grad"></div>
+            <div class="grad2"></div>
+            <img src="./images/background.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <footer class="bg-dark d-flex" style="bottom: 0; height: 60px; justify-content: center; align-items: center;">
+          <p class="text-center bg-light mb-0 bg-dark text-white">Web-Bootstrap PJT, by 김예린, 장영진</p>
+    </footer> -->
+
+
+
+    
+    
+      <!-- <div class="content">
+        <h2 class="text-center text-white">Fear can hold you prisoner, hope can set you free</h2>
+        <h3 class="text-center text-white fw-light" >두려움은 당신을 감옥에 가두지만 희망은 당신을 자유롭게 만든다.</h3>
+        <a href="#" class="play">Now watching</a>
+      </div> -->
+    <!-- </main> -->
+
+    
+
+<script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 </body>
