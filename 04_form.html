@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Movie</title>
 </head>
-<body>        
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body class="bg-dark">        
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img class="logo" onclick="location.href='02_home.html'" src="./images/logo.png"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,41 +37,74 @@
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
         <div class="modal-content d-flex">
-            <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <div class="modal-header bg-dark">
+            <h5 class="modal-title text-white" id="exampleModalLabel">Modal title</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body bg-dark">
                 <form>
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <label for="exampleInputEmail1" class="form-label text-white">Email address</label>
                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required autofocus>
                       <div id="emailHelp" class="form-text">we'll never share youre email with anyone else.</div>
                     </div>
                 </form>
                 <div>
-                    <p class="mb-1">password</p>
+                    <p class="mb-1 text-white">password</p>
                     <div class="input-group mb-3">
                         <input type="password" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
                     </div>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
+                    <label class="form-check-label text-white" for="flexCheckDefault">
                         check me out
                     </label>
                 </div>
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer bg-dark">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary">Submit</button>
             </div>
         </div>
         </div>
     </div>
-    
+
+
+    <!-- Title -->
+    <h1 class="text-center m-5 fw-bold text-white">리뷰 작성하기</h1>
+
+    <div class="container">
+
+        <!-- Select -->
+        <select class="form-select mt-3" aria-label="Default select example">
+            <option selected>영화를 선택해주세요.</option>
+            <option value="1">쇼생크 탈출</option>
+            <option value="2">죽은 시인의 사회</option>
+            <option value="3">다크나이트 라이즈</option>
+            <option value="3">그랜드 부다페스트 호텔</option>
+            <option value="3">her</option>
+            <option value="3">위대한 쇼맨</option>
+        </select>
+
+        <!-- 리뷰 작성 input -->
+        <div class="mb-3 mt-3">
+            <label for="exampleFormControlInput1" class="form-label fw-bold text-white">리뷰 제목</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="리뷰를 작성해주세요.">
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="exampleFormControlTextarea1" class="form-label fw-bold text-white">리뷰 내용</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <button type="button" class="btn btn-primary mt-3">Submit</button>
+
+    </div>
+
+
+    <!-- Footer -->
     <footer>
-        <div class="text-center bg-light">
+        <div class="text-center bg-light mt-5 mb-3 bg-dark text-white">
             <p class="my-0">Web-Bootstrap PJT, by 김예린, 장영진</p>
         </div>
     </footer>

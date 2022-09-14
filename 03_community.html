@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Movie</title>
 </head>
-<body>        
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body class="bg-dark">        
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img class="logo" src="./images/logo.png"></a>
+            <a class="navbar-brand" href="#"><img class="logo" onclick="location.href='02_home.html'" src="./images/logo.png"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -28,68 +28,76 @@
                     <li>
                         <!-- Button trigger modal -->
                         <a class="login nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</a>
-        
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                            <div class="modal-content d-flex">
-                                <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <form>
-                                        <div class="mb-3">
-                                          <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required autofocus>
-                                          <div id="emailHelp" class="form-text">we'll never share youre email with anyone else.</div>
-                                        </div>
-                                    </form>
-                                    <div>
-                                        <p class="mb-1">password</p>
-                                        <div class="input-group mb-3">
-                                            <input type="password" class="form-control" placeholder="Write your password" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                        </div>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            check me out
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Submit</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content d-flex">
+            <div class="modal-header bg-dark">
+            <h5 class="modal-title text-white" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body bg-dark">
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label text-white">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required autofocus>
+                      <div id="emailHelp" class="form-text">we'll never share youre email with anyone else.</div>
+                    </div>
+                </form>
+                <div>
+                    <p class="mb-1 text-white">password</p>
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control" placeholder="Write your password" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label text-white" for="flexCheckDefault">
+                        check me out
+                    </label>
+                </div>
+            </div>
+            <div class="modal-footer bg-dark">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Title -->
     <section class="banner">
         <div class="text-center p-5 dark" style="color:black; height: 300px;">
             <div class="m-5">
-                <h1 class="text-dark" style="font-weight: bolder; font-size: 3.5rem; letter-spacing: 0.5rem;">Community</h1>
-                <h6 class="text-muted">movie</h6>
+                <h1 class="text-white" style="font-weight: bolder; font-size: 3.5rem; letter-spacing: 0.5rem;">COMMUNITY</h1>
+                <h6 class="text-muted text-white">movie</h6>
             </div>
         </div>
     </section>
 
+    <!-- Review Posting Button -->
+    <div class="d-grid d-md-flex justify-content-end justify-content-md-center my-5 p-5 col-sm-12 col-md-12 col-lg-1">
+        <button type="button" class="btn btn-primary col-md-12" onclick="location.href='04_form.html'">글 작성하기</button>
+    </div>
+
+    <!-- Aside list -->
     <div class="d-flex justify-content-center flex-wrap">
         <ul class="list-group mx-5">
-            <li class="list-group-item" style="border:none;"><a href="#" style="border-bottom: none">Box</a></li>
-            <li class="list-group-item" style="border:none;"><a href="#" style="border-bottom: none">Movies</a></li>
-            <li class="list-group-item" style="border:none;"><a href="#" style="border-bottom: none">Genres</a></li>
-            <li class="list-group-item" style="border:none;"><a href="#" style="border-bottom: none">Actors</a></li>
+            <li class="list-group-item bg-dark fw-bold" style="border:none;"><a href="#" style="color: #cfcfcf">Boxoffice</a></li>
+            <li class="list-group-item bg-dark fw-bold" style="border:none;"><a href="#" style="color: #cfcfcf">Movies</a></li>
+            <li class="list-group-item bg-dark fw-bold" style="border:none;"><a href="#" style="color: #cfcfcf">Genres</a></li>
+            <li class="list-group-item bg-dark fw-bold" style="border:none;"><a href="#" style="color: #cfcfcf">Actors</a></li>
         </ul>
-
+    
+    <!-- Notice Board -->
     <div class="table-responsive project-list col-lg-10 px-3 d-none d-lg-table">
-        <table class="table table-hover project-table table-centered table-nowrap">
+        <table class="table table-hover project-table table-centered table-nowrap text-white">
             <thead>
                 <tr>
                     <th scope="col">#</th>
@@ -158,7 +166,7 @@
                 <tr>
                     <th scope="row">3</th>
                     <td>헌트</td>
-                    <td>꽤 재밌네요</td>
+                    <td>개꿀잼 인정입니다.</td>
                     <td>김예린</td>
                     <td>2022-09-13</td>
                     <td>
@@ -214,8 +222,19 @@
     </div>
 
     <!-- 992px 미만 Cards -->
-        <div class="cards">
+        <div class="cards p-5">
             <div class="col-12 d-table d-lg-none">
+                <div class="col-md-12 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body mb-3">
+                            <h2 class="card-title">Card One</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque recusandae corporis distinctio. Voluptatum reiciendis veritatis iste et atque eligendi rerum.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-primary btn-sm" href="">More Info</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-md-4 mb-5">
                     <div class="card h-100">
                         <div class="card-body mb-3">
@@ -251,38 +270,28 @@
                 </div>
             </div>
         </div>
-        <!-- 992 미만 카드 다른.ver -->
-        <!-- <div class="d-block d-lg-none d-xl-none d-xxl-none my-4">
-            <div class="card my-4">
-                <div class="card-body">
-                <h5 class="card-title">Best Movie Ever</h5>
-                <p class="card-text">Great Movie Title</p>
-                <p>user</p>
-                <div class="text-muted">
-                    1 minute ago
-                </div>
-                </div>
-            </div>
-        </div> -->
         
+    
+
      <!-- step -->
-        <div class="pt-3">
+        <div class="pt-3 mt-3">
             <ul class="pagination justify-content-end mb-0">
                 <li class="page-item disabled">
-                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                    <a class="page-link bg-dark fw-bold text-white" href="#" tabindex="-1" aria-disabled="true">Previous</a>
                 </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item "><a class="page-link" style="background-color: #212529; color: #cfcfcf;" href="#">1</a></li>
+                <li class="page-item active fw-bold"><a class="page-link" style="border-color: #cfcfcf;" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" style="background-color: #212529; color: #cfcfcf;" href="#">3</a></li>
                 <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
+                    <a class="page-link bg-dark fw-bold text-white" href="#">Next</a>
                 </li>
             </ul>
         </div>         
     </div>
 
+    <!-- Footer -->
     <footer>
-        <div class="text-center bg-light">
+        <div class="text-center bg-light bg-dark text-white mt-5 mb-5">
             <p class="my-0">Web-Bootstrap PJT, by 김예린, 장영진</p>
         </div>
     </footer>

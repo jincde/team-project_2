@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
 .logo {
     width: 100%;
     height: 56px;
 }
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
 
 .login:hover {
     cursor: pointer;
